@@ -14,7 +14,7 @@ export function Button({
   textColor = "#fff",
   color = "#333",
   onPress
-   }: ButtonProps) {
+}: ButtonProps) {
   return (
     <TouchableOpacity 
     onPress={onPress}

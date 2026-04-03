@@ -4,6 +4,7 @@ import { useAuth } from "@/hooks/useAuth"
 import { useFonts } from "expo-font"
 import { LinearGradient } from "expo-linear-gradient"
 import { StyleSheet, Text, View } from "react-native"
+import { Colors } from "../global/color"
 
 
 export default function SignIn() {
@@ -20,7 +21,7 @@ export default function SignIn() {
         <View style={styles.container}>
             <View style={styles.topContainer}>
                 <LinearGradient
-                    colors={["#c50202", "#3d1803"]}
+                    colors={["#969424", "#3d1803"]}
                     style={styles.circle}
                 >
                 </LinearGradient>
@@ -73,7 +74,7 @@ export default function SignIn() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#180202",
+        backgroundColor: Colors.brown.dark,
         alignItems: "center",
         justifyContent: "center",
         padding: 20,
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
     title: {
         fontFamily: "AKONY",
         fontSize: 60,
-        color: "#fff",
+        color: "#ffffff",
     },
 
     line: {
@@ -137,14 +138,14 @@ const styles = StyleSheet.create({
     },
 
     textlineOu: {
-        color: "#7c3004",
+        color: "#969424",
         fontSize: 22
     },
 
     lineOu: {
         width: "20%",
         height: 0.5,
-        backgroundColor: "#7c3004"
+        backgroundColor: "#969424"
     },
 
 
